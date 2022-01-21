@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/venture"
+            android:gravity="center"
+            android:fontFamily="@font/montserratregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:text="Test Case"/>
+    </LinearLayout>
+
+</LinearLayout>

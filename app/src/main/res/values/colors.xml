@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007694</color>
+    <color name="colorPrimaryDark">#005970</color>
+    <color name="colorAccent">#203F92</color>
+    <color name="secondprimary">#0B266E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#0000ffff</color>
+    <color name="colorGrey">#ECECEC</color>
+    <!--for plot summary-->
+    <color name="availableCount">#00A84C</color>
+    <color name="alottedCount">#EF4836</color>
+    <color name="mortgageCount">#A07E50</color>
+    <color name="reservedCount">#F39C12</color>
+    <color name="registeredCount">#1BA39C</color>
+    <color name="blockedCount">#913D88</color>
+    <color name="silver">#E1E0E4</color>
+    <color name="colorBackground">@color/colorPrimaryDark</color>
+</resources>

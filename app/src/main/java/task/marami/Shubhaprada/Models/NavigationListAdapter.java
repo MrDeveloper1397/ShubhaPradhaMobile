@@ -1,0 +1,70 @@
+package task.marami.Shubhaprada.Models;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+import task.marami.Shubhaprada.R;
+import task.marami.Shubhaprada.Utils.Contents;
+import task.marami.Shubhaprada.Utils.DownloadImageTask;
+
+
+public class NavigationListAdapter extends BaseAdapter {
+    ArrayList<ProjectsData> projectsData;
+    Context context;
+
+    public NavigationListAdapter(ArrayList<ProjectsData> projectsData, Context context) {
+        this.projectsData = projectsData;
+        this.context = context;
+    }
+
+    @Override
+    public int getCount() {
+        return projectsData.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return position;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        View view1 = LayoutInflater.from(context).inflate(R.layout.itemlayout,null );
+        ImageView mimageview = (ImageView) view1.findViewById(R.id.img_layout_image);
+        TextView venture=(TextView) view1.findViewById(R.id.txt_layout_title);
+        TextView viewtxt=(TextView) view1.findViewById(R.id.viewtxt);
+        TextView count1=(TextView) view1.findViewById(R.id.txt_layout_totcount);
+        TextView count2=(TextView) view1.findViewById(R.id.txt_layout_avlcount);
+        count1.setVisibility(View.GONE);
+        count2.setVisibility(View.GONE);
+        viewtxt.setText("Navigation");
+        venture.setText(projectsData.get(position).getTitle());
+        String imgname =projectsData.get(position).getImageLink();
+        String imgurl = Contents.imageurl + imgname;
+        new DownloadImageTask((mimageview))
+                .execute(imgurl);
+        if(position%2==0)
+        {
+            view1.setBackgroundColor(Color.parseColor("#ECEFF1"));
+        }
+        else
+        {
+            view1.setBackgroundColor(Color.parseColor("#ffffff"));
+        }
+
+        return view1;
+    }
+}

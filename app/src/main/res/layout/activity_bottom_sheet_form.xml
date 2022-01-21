@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Availability"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:baselineAligned="false"
+                android:paddingRight="5dp"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/edt_plot_no"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserratregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Plot No"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:drawSelectorOnTop="true"
+                    android:visibility="gone"
+                    android:entries="@array/bp1array"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner2"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_p_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:hint="Enter The Name " />
+            <Button
+                android:id="@+id/btn_plot_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"/>
+            <ProgressBar
+                android:id="@+id/prog_bottom_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

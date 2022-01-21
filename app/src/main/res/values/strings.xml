@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Shubhaprada</string>
+    <string name="name_alpha">ABCDEFGHIJKLMNOPQUVRSTWXYZ abcdefghijklmnopquvrstwxyz</string>
+    <string name="login_btn_title">SAVE</string>
+    <string name="img_login_discrip">Company Logo</string>
+
+    <string name="hint_name"> Enter Name</string>
+    <string name="hint_number"> Enter Mobile Number</string>
+    <string name="hint_emp_id">Enter ID</string>
+    <string name="title_activity_main">Shubhaprada</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_admin">Admin</string>
+    <array name="bp1array">Sector</array>
+    <string name="Admin_Services">Admin Services</string>
+    <string name="Approval_Image">Approval Image</string>
+    <string name="Plot_Approval">Pending Approvals</string>
+    <string name="Plot_Approved">Approved Members</string>
+    <string name="Plot_matrix">Plot Matrix</string>
+    <string name="PinChange">Change Pin Number</string>
+    <string name="day_collection">Day Collection</string>
+    <string name="day_Payments">Day Payments</string>
+    <string name="day_bookings">Day Bookings</string>
+    <string name="title_activity_approval_screen">ApprovalScreen</string>
+    <string name="tab_plot">Plot</string>
+    <string name="tab_cost">Cost</string>
+    <string name="tab_discount">Discount</string>
+    <string name="tab_commission">Commission</string>
+    <string name="action_settings">Admin</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="Plot_App_head">Plot Details</string>
+    <string name="Plot_App_face">Facing</string>
+    <string name="Remarkshint">Enter Remarks</string>
+    <string name="Remarks">Remarks:</string>
+    <string name="Venture">Venture</string>
+    <string name="Sector">Sector</string>
+    <string name="PlotArea">Plot Area</string>
+    <string name="PbNo">PbNo</string>
+    <string name="Name">Name</string>
+    <string name="dateJoin">DOJ</string>
+    <string name="nav_header_title">Shubhaprada</string>
+    <string name="ventureTitle">Ventures</string>
+    <string name="premium">Premium</string>
+    <string name="underlineText"><u>Reset Password</u></string>
+</resources>

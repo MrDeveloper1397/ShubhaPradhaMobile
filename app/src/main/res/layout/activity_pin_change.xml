@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinChange">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="6"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Pin Number"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@android:color/holo_purple"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/edtone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:hint="-"
+                    android:textSize="50sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword"/>
+
+                <EditText
+                    android:id="@+id/edttwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="50sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword" />
+
+                <EditText
+                    android:id="@+id/edtthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="50sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword" />
+
+                <EditText
+                    android:id="@+id/edtfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="50sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword"
+                    android:layout_marginRight="50dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Re-Enter New Pin Number"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@android:color/holo_purple"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/reedtone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:hint="-"
+                    android:textSize="50dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword"/>
+
+                <EditText
+                    android:id="@+id/reedttwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="50dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword" />
+
+                <EditText
+                    android:id="@+id/reedtthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="50dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword" />
+
+                <EditText
+                    android:id="@+id/reedtfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="50dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberPassword"
+                    android:layout_marginRight="50dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/otpkeypad"/>
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/prog_pin_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
